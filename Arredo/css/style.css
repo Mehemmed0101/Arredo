@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.container {
+    padding: 0 3rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    cursor: pointer;
+    width: 55%;
+    margin-top: 28px;
+}
+
+nav {
+    margin-left: 30%;
+    margin-top: 30px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+    margin-left: 43px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    transition: .7s;
+    bottom: -8px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+}
+
+nav a:hover::before {
+    width: 100%;
+    color: #fff;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 25px;
+    transition: .5s;
+}
+
+.iconss a {
+    display: none;
+}
+
+.icons a:hover {
+    color: gray;
+}
+
+
+section {
+    background-image: url(https://arredo.qodeinteractive.com/wp-content/uploads/2018/05/h1-parallax-img-1.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.text a {
+    font-size: 75px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    top: 32%;
+    left: 11%;
+}
+
+.text span {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    position: absolute;
+    top: 45%;
+    max-width: 500px;
+    left: 11%;
+    z-index: 111111;
+}
+
+.button a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 13px 30px;
+    position: absolute;
+    top: 58%;
+    left: 12%;
+    transition: .6s;
+}
+
+.button i {
+    font-size: 13px;
+    margin-left: 5px;
+    transition: 0.6s;
+}
+
+.button a:hover {
+    background-color: black;
+    border-color: black;
+}
+
+.button a:hover span i {
+    transform: translateX(60%);
+}
+
+.main {
+    text-align: center;
+}
+
+.main h2 {
+    font-size: 35px;
+    color: #262626;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.main h4 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #737373;
+    display: inline-block;
+    max-width: 600px;
+    margin-bottom: 100px;
+}
+
+
+.allbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box a {
+    color: #000;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.box .name:hover {
+    color: orange;
+}
+
+.box span {
+    font-size: 12px;
+}
+
+.box img {
+    width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.new span {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+}
+
+.new1 span {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    opacity: 0.5;
+}
+
+.overlay,
+.lay span {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.overlay,
+.lay {
+    background-color: #000;
+    cursor: pointer;
+    padding: 8px 16px;
+    position: absolute;
+    top: 71%;
+    left: -42%;
+    transition: .5s;
+}
+
+.overlay a {
+    color: #fff;
+    font-size: 17px;
+    margin-left: 12px;
+}
+
+
+.image:hover img {
+    transform: scale(1.04);
+}
+
+.image:hover .overlay {
+    left: -23%;
+}
+
+.image:hover .lay {
+    left: 0;
+}
+
+
+.overlay:hover {
+    left: 0 !important;
+
+}
+
+@media(max-width:576px) {
+
+    header {
+        background-color: #000;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .logo img {
+        width: 100%;
+        margin-left: 15%;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .iconss a {
+        display: block;
+        color: #fff;
+        font-size: 25px;
+        margin-top: 17px;
+    }
+
+    .text a {
+        font-size: 53px;
+        color: #fff;
+        text-decoration: none;
+        position: absolute;
+        top: 32%;
+        left: 11%;
+    }
+
+    .text span {
+        position: absolute;
+        top: 43%;
+        max-width: 350px;
+        left: 12%;
+    }
+
+    .button a {
+        position: absolute;
+        top: 56%;
+        left: 12%;
+    }
+
+    .text1 h2 {
+        font-size: 32px;
+
+    }
+
+    .text1 h4 {
+        font-size: 18px;
+        max-width: 380px;
+
+    }
+
+    .allbox {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .box {
+        width: 85%;
+        overflow: hidden;
+    }
+
+    .box img {
+        margin-bottom: 5px;
+    }
+
+    .box a {
+        margin-bottom: 5px;
+    }
+
+    .box span {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+}
